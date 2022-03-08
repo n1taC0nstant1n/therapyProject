@@ -14,7 +14,7 @@ body{
 	background-color: #fff;
 	
 }
-.clearfix {
+/* .clearfix {
   overflow: auto;
 }
 .clearfix::after {
@@ -58,7 +58,7 @@ logo{
 	}
 
 .top-banner h1{
-    /*color: #22b3aa;*/	
+    /*color: #22b3aa;
     font-style: normal;
     font-weight: 400;
     text-align: center;
@@ -67,7 +67,7 @@ logo{
     padding-top: 30px;
     font-family: boogaloo;
 }
-nav ul{
+/* nav ul{
 	display: block;
 	
 }
@@ -133,9 +133,9 @@ p{
 	display: block;
 	/* Display Block-Pune elementele unul sub altul*/
 	/*Display inline,flex- Pune  pe aceeasi linie-unul dupa altul*/
-	text-align: center;	
-}
-.container-featured{
+	/* text-align: center;	
+} */
+/* .container-featured{
     margin-top: 2%;
 }
 #pic1{
@@ -247,9 +247,9 @@ h3{
 }
 
 
-@media screen and (min-width:768px){ 
+@media screen and (min-width:768px){  */
 	/*Acesta este pentru tableta*/
-	
+	/*
 	nav a{
 		width: 19.5%;
 		float: left;
@@ -262,11 +262,11 @@ h3{
     nav ul li{
         flex: 1;
       /*  margin: 5px;*//*Aici face spatierea la nav intre butoane*/
-	}
+	/* } */
 	
+
 	
-	
-	
+	/*
 	.container-featured{
 		float: left;
 		width: 48%;
@@ -300,10 +300,10 @@ h3{
 	
                               }
 
-@media screen and (min-width:960px){
+@media screen and (min-width:960px){*/
 	/*Aceasta este varianta Desktop*/
 	
-	.container-featured{
+	/*.container-featured{
 		float: left;
 		width: 48%;
 		margin-left: 1%;
@@ -337,4 +337,4 @@ h3{
 	
 	
 	
-
+ */

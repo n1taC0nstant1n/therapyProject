@@ -1,0 +1,318 @@
+*{
+	margin: 0;
+
+}
+
+body{
+    font-family: didact-gothic;
+    font-style: normal;
+    font-weight: 400;
+	color: #414243;
+	background-color: #fff;
+	
+}
+
+/* header */
+header{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 20;
+    background: rgba(198,237,235,.5);
+    
+}
+.navbar-collapse{
+    justify-content: flex-end;
+}
+
+.navbar-expand-lg .navbar-nav .nav-link.contact{
+    padding-right: 0;
+}
+
+.navbar-expand-lg.navbar{
+    padding: 1rem 0;
+}
+
+.navbar-expand-lg .navbar-nav .nav-link{
+    color: #414243;
+    text-decoration: none;
+    font-size:1.4rem;
+    position: relative;
+    z-index:1;
+}
+
+.navbar-expand-lg .navbar-nav .nav-link::before{
+    position: absolute;
+    top: 100%;
+    left:0.5rem;
+    height: 2px;
+    background-color: #414243;
+    content:'';
+    width: 0;
+    margin-top: -0.5rem;
+    transition: all .5s;
+
+}
+
+.navbar-expand-lg .navbar-nav .nav-link:hover::before,
+.navbar-expand-lg .navbar-nav .nav-link.active::before{
+    width: 2rem
+
+}
+.navbar-toggler{
+    border: none;
+    padding: 0;
+}
+.navbar-toggler:focus{
+    box-shadow: none;
+    border: none;
+}
+
+.navbar-toggler-icon i{
+    font-size: 1.4em;
+}
+
+.header-meniu{
+    text-align: right;
+}
+
+.close-navbar-wrapper{
+    display: flex;
+    justify-content: flex-end;
+    padding: 1rem 0;
+    background:rgb(18, 163, 163)
+}
+
+.close-navbar{
+    width: 1.5rem;
+    height: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.close-navbar i{
+    font-size:1.5rem;
+    cursor: pointer;
+    padding: .5rem;
+    color:#12a3a3;
+    background: #fff;
+}
+
+.close-navbar-wrapper{
+    display: none;
+}
+
+
+/* slider home */
+.slider-img{
+    background-image: url('imagini/banner.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    z-index: 1
+}
+
+.slider-img::before{
+    display: block;
+    content: '';
+    padding-bottom: 36%;
+}
+
+
+
+/* modul servicii */
+#m-servicii{
+    padding: 50px 0;
+}
+
+.m-servicii-item-img-wrapper{
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+    border-radius: 50%;
+}
+
+.m-servicii-img-link{
+    display: block;
+}
+
+.m-servicii-item .m-servicii-item-img{
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    position: relative;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 5px solid #c6edeb;
+    transition: all .5s;
+}
+
+.m-servicii-item:hover .m-servicii-item-img{
+    transform: scale(1.2) rotate(5deg)
+}
+
+.reflexoterapie{
+    background-image: url('imagini/pic1.jpg')
+}
+.drenaj{
+    background-image: url('imagini/pic2.jpg')
+}
+.masaj{
+    background-image: url('imagini/pic3.jpg')
+}
+.terapia-bowen{
+    background-image: url('imagini/pic4.jpg')
+}
+
+.m-servicii-item-img::before{
+    display: block;
+    padding-bottom: 100%;
+    content: '';
+    overflow: hidden;
+    border-radius: 50%
+}
+
+.m-title{
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+
+.m-subtitle{
+    font-size: 1.5rem;
+    margin-top: 1.5rem
+}
+
+.m-subtitle-link{
+    text-decoration: none;
+    color: #12a3a3;
+    transition: all .5s;
+}
+
+.m-subtitle-link:hover{
+    color:#098e8e
+}
+
+.m-servicii-item-text{
+    font-size: 1rem;
+    padding-bottom:10px;
+    border-bottom: 1px solid rgba(18, 163, 163,.2);
+    position: relative;
+    z-index: 1
+}
+
+.m-servicii-item .m-servicii-item-text::before{
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    right: 50%;
+    height: 1px;
+    background: rgb(18,163,163);
+    transition: all .5s;
+}
+
+.m-servicii-item:hover .m-servicii-item-text::before{
+    left: 0;
+    right: 0;
+}
+
+/* modul bowen */
+#m-bowen{
+    padding-bottom:50px;
+}
+.m-bowen-item .m-bowen-item-img-wrapper{
+    overflow: hidden;
+}
+
+.m-bowen-item .m-bowen-item-img{
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    position: relative;
+    z-index: 1;
+    transition: all .5s;
+}
+
+.m-bowen-item .m-bowen-item-img::before{
+    display: block;
+    content: '';
+    z-index: 2;
+    padding-bottom: 50%;
+}
+
+.m-bowen-item:hover .m-bowen-item-img{
+    transform: scale(1.2) rotate(5deg)
+}
+
+.utilitate{
+    background-image: url('imagini/blog2.jpg')
+}
+
+.efecte{
+    background-image: url('imagini/blog3.jpg')
+}
+
+/* footer */
+footer{
+    padding: 30px 0;
+    background-color: #c6edeb;
+}
+
+.row.footer-rand{
+    align-items: center;
+}
+
+.footer-contact-list,
+.utile-list{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+.footer-utile-item{
+    line-height: 1.6;
+}
+
+.footer-utile-link{
+    text-decoration: none;
+    transition: all.5s;
+    position: relative;
+    z-index: 1;
+    color: #414243;
+    font-weight: 500;
+}
+
+.footer-utile-link:hover{
+    letter-spacing: 0.5px;
+    color: #414243;
+
+}
+
+.footer-contact-link{
+    text-decoration: none;
+    color: #098e8e;
+    transition: all .5s;
+}
+
+.footer-contact-link:hover{
+    text-decoration: none;
+    color: #098e8e;
+}
+
+.contact-item-text{
+    font-weight: 500;
+}
+
+.contact-item-fb a img{
+    transition: all .5s
+}
+
+
+.contact-item-fb a img:hover{
+    filter: grayscale(100%)
+}
