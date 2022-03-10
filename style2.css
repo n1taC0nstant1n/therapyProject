@@ -105,8 +105,7 @@ header{
 
 
 /* slider home */
-.slider-img{
-    background-image: url('imagini/banner.jpg');
+.slider-home-img{
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -114,10 +113,30 @@ header{
     z-index: 1
 }
 
-.slider-img::before{
+.slider-home-img::before{
     display: block;
     content: '';
     padding-bottom: 36%;
+}
+
+.slider1{
+    background-image: url('imagini/banner.jpg');
+}
+
+.slider2{
+    background-image: url('imagini/despre.jpg');
+}
+
+.slider3{
+    background-image: url('imagini/gallery.png');
+}
+
+.slider4{
+    background-image: url('imagini/servicii.jpg');
+}
+
+#slider-home .owl-nav{
+    display: none;
 }
 
 
