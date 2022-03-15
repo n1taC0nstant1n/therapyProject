@@ -12,13 +12,28 @@ body{
 	
 }
 
+::-webkit-scrollbar {
+    width: .5rem;
+  }
+  
+  /* Track */
+  /* ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px #098e8e;
+    border-radius: .2rem;
+  } */
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #12a3a3;
+    border-radius: .5rem;
+  }
+
 /* header */
 header{
-    position: absolute;
-    top: 0;
+    position: relative;
     width: 100%;
     z-index: 20;
-    background: rgba(198,237,235,.5);
+    background: #c6edeb;
     
 }
 .navbar-collapse{
@@ -30,7 +45,7 @@ header{
 }
 
 .navbar-expand-lg.navbar{
-    padding: 1rem 0;
+    padding: 1rem 15px;
 }
 
 .navbar-expand-lg .navbar-nav .nav-link{
@@ -79,13 +94,12 @@ header{
 .close-navbar-wrapper{
     display: flex;
     justify-content: flex-end;
-    padding: 1rem 0;
     background:rgb(18, 163, 163)
 }
 
 .close-navbar{
-    width: 1.5rem;
-    height: 1.5rem;
+    width: 2rem;
+    height: 2rem;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -96,13 +110,43 @@ header{
 .close-navbar i{
     font-size:1.5rem;
     cursor: pointer;
-    padding: .5rem;
-    color:#12a3a3;
-    background: #fff;
+    display: block;
+    cursor: pointer;
 }
 
 .close-navbar-wrapper{
     display: none;
+}
+
+.sticky{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 30;
+    animation-name: sticky-animation;
+    animation-duration: 1s;
+}
+
+@keyframes sticky-animation{
+    0%{
+        transform: translateY(-100%)
+    }
+    100%{
+        transform: translateY(0);
+    }
+}
+
+header .navbar-brand img{
+    width: 100px;
+}
+
+header.sticky .navbar-brand img{
+    width: 60px;
+}
+
+header.sticky .navbar-expand-lg.navbar{
+    padding: .5rem 15px;
 }
 
 
@@ -137,8 +181,90 @@ header{
     background-image: url('imagini/servicii.jpg');
 }
 
+.overlay-slider-home{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    content: '';
+    background: rgba(0,0,0,.2);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    color: #fff;
+}
+
+.overlay-slider-home-subtitlu{
+    font-size: 1.2rem;
+}
+
+.overlay-titlu-link{
+    font-size: 1.8rem;
+    font-weight: 700;
+    text-decoration: none;
+    color: #fff;
+    display: block;
+    transition: all .5s;
+}
+
+.overlay-titlu-link:hover{
+    color: #fff;
+    letter-spacing: .1rem;
+}
+
+.overlay-slider-home-text{
+    font-size: 1.4rem;
+    width: 80%;
+    text-align: center;
+    margin: 0 auto;
+}
+
+#slider-home.owl-carousel{
+    position: relative;
+    z-index: 1;
+} 
+
 #slider-home .owl-nav{
+    display: flex;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.owl-dots{
     display: none;
+    
+}
+
+#slider-home  .owl-prev,
+#slider-home  .owl-next{
+    width: 3rem;
+    height: 3rem;
+    background: #fff;
+    font-size: 1.8rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    transition: all .5s;
+
+}
+
+#slider-home  .owl-prev:hover,
+#slider-home  .owl-next:hover{
+    background: #c6edeb;
+    color:#414243;
+}
+
+#slider-home  .owl-prev span,
+#slider-home  .owl-next span{
+    display: flex;
+    align-self: stretch;
+    width: 100%;
+    justify-content: center;
+
 }
 
 
@@ -157,6 +283,15 @@ header{
 
 .m-servicii-img-link{
     display: block;
+}
+
+.m-servicii-item{
+    border: none;
+    border-bottom: 1px solid rgba(18, 163, 163,.2);
+    height: 100%;
+    position: relative;
+    z-index: 1;
+
 }
 
 .m-servicii-item .m-servicii-item-img{
@@ -219,12 +354,11 @@ header{
 .m-servicii-item-text{
     font-size: 1rem;
     padding-bottom:10px;
-    border-bottom: 1px solid rgba(18, 163, 163,.2);
     position: relative;
     z-index: 1
 }
 
-.m-servicii-item .m-servicii-item-text::before{
+.m-servicii-item::before{
     content: '';
     position: absolute;
     top: 100%;
@@ -235,7 +369,7 @@ header{
     transition: all .5s;
 }
 
-.m-servicii-item:hover .m-servicii-item-text::before{
+.m-servicii-item:hover::before{
     left: 0;
     right: 0;
 }
@@ -244,6 +378,12 @@ header{
 #m-bowen{
     padding-bottom:50px;
 }
+
+.m-bowen-item{
+    height: 100%;
+
+}
+
 .m-bowen-item .m-bowen-item-img-wrapper{
     overflow: hidden;
 }

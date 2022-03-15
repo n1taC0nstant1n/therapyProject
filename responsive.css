@@ -1,7 +1,4 @@
 @media screen and (max-width:991px){
-    header{
-        position:relative;
-    }
 
     .collapse:not(.show){
         visibility: hidden;
@@ -46,4 +43,98 @@
         display: flex;
     }
 
+    .slider-home-img::before{
+        padding-bottom: 40vh;
+    }
+
+    /* modul servicii */
+    .m-servicii-item-wrapper{
+        margin-bottom: 3rem;
+    }
+
+    .m-servicii-item-img-wrapper{
+        width: 70%;
+        margin: auto;
+    }
+
+    /* modul bowen */
+    .m-bowen-item-wrapper{
+        margin-bottom: 3rem
+    }
+
+    
+
+}
+
+@media screen and (max-width:767px){
+    .container{
+        max-width: 100%
+    }
+
+    /* modul bowen */
+    .footer-utile-wrapper{
+        margin-bottom: 1rem;
+    }
+}
+
+@media screen and (max-width:575px){
+    .slider-home-img::before {
+        padding-bottom: 30vh;
+
+    }
+
+    #slider-home .owl-nav{
+        display: none;
+    }
+
+    .overlay-slider-home-subtitlu{
+        font-size: 1rem;
+    }
+
+    .overlay-titlu-link{
+        font-size: 1.4rem;
+    }
+
+    .overlay-slider-home-text{
+        font-size: 1.2rem;
+        width: 95%;
+    }
+
+    #slider-home .owl-dots{
+        display: flex;
+        position: relative;
+        bottom: 0;
+        right: 0;
+        justify-content: center;
+        width: 100%;
+        margin-top: -2rem;
+    }
+
+    #slider-home .owl-dots .owl-dot{
+        width: 0.8rem;
+        height: 0.8rem;
+        background: #fff;
+        margin-right: .3rem;
+        border-radius: 50%;
+    }
+
+    #slider-home .owl-dots .owl-dot.active{
+        background: #c6edeb;
+    }
+
+
+}
+
+@media screen and (max-width:480px){
+    .col-6{
+        width: 100%;
+    }
+
+    .navbar-collapse.show{
+        width: 100%;
+    }
+
+    .m-servicii-item-img-wrapper{
+        width: 60%;
+    }
 }
