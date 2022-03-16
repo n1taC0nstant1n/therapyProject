@@ -13,19 +13,19 @@ body{
 }
 
 ::-webkit-scrollbar {
-    width: .5rem;
+    width: .5em;
   }
   
   /* Track */
   /* ::-webkit-scrollbar-track {
     box-shadow: inset 0 0 5px #098e8e;
-    border-radius: .2rem;
+    border-radius: .2em;
   } */
   
   /* Handle */
   ::-webkit-scrollbar-thumb {
     background: #12a3a3;
-    border-radius: .5rem;
+    border-radius: .5em;
   }
 
 /* header */
@@ -38,6 +38,7 @@ header{
 }
 .navbar-collapse{
     justify-content: flex-end;
+
 }
 
 .navbar-expand-lg .navbar-nav .nav-link.contact{
@@ -45,13 +46,13 @@ header{
 }
 
 .navbar-expand-lg.navbar{
-    padding: 1rem 15px;
+    padding: 1em 15px;
 }
 
 .navbar-expand-lg .navbar-nav .nav-link{
     color: #414243;
     text-decoration: none;
-    font-size:1.4rem;
+    font-size:1.4em;
     position: relative;
     z-index:1;
 }
@@ -59,19 +60,19 @@ header{
 .navbar-expand-lg .navbar-nav .nav-link::before{
     position: absolute;
     top: 100%;
-    left:0.5rem;
+    left:0.5em;
     height: 2px;
     background-color: #414243;
     content:'';
     width: 0;
-    margin-top: -0.5rem;
+    margin-top: -0.5em;
     transition: all .5s;
 
 }
 
 .navbar-expand-lg .navbar-nav .nav-link:hover::before,
 .navbar-expand-lg .navbar-nav .nav-link.active::before{
-    width: 2rem
+    width: 2em
 
 }
 .navbar-toggler{
@@ -98,8 +99,8 @@ header{
 }
 
 .close-navbar{
-    width: 2rem;
-    height: 2rem;
+    width: 2em;
+    height: 2em;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -108,7 +109,7 @@ header{
 
 
 .close-navbar i{
-    font-size:1.5rem;
+    font-size:1.5em;
     cursor: pointer;
     display: block;
     cursor: pointer;
@@ -117,6 +118,7 @@ header{
 .close-navbar-wrapper{
     display: none;
 }
+
 
 .sticky{
     position: fixed;
@@ -146,7 +148,7 @@ header.sticky .navbar-brand img{
 }
 
 header.sticky .navbar-expand-lg.navbar{
-    padding: .5rem 15px;
+    padding: .5em 0;
 }
 
 
@@ -197,11 +199,11 @@ header.sticky .navbar-expand-lg.navbar{
 }
 
 .overlay-slider-home-subtitlu{
-    font-size: 1.2rem;
+    font-size: 1.2em;
 }
 
 .overlay-titlu-link{
-    font-size: 1.8rem;
+    font-size: 1.8em;
     font-weight: 700;
     text-decoration: none;
     color: #fff;
@@ -211,11 +213,11 @@ header.sticky .navbar-expand-lg.navbar{
 
 .overlay-titlu-link:hover{
     color: #fff;
-    letter-spacing: .1rem;
+    letter-spacing: .1em;
 }
 
 .overlay-slider-home-text{
-    font-size: 1.4rem;
+    font-size: 1.4em;
     width: 80%;
     text-align: center;
     margin: 0 auto;
@@ -243,7 +245,7 @@ header.sticky .navbar-expand-lg.navbar{
     width: 3rem;
     height: 3rem;
     background: #fff;
-    font-size: 1.8rem;
+    font-size: 1.8em;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -332,13 +334,13 @@ header.sticky .navbar-expand-lg.navbar{
 }
 
 .m-title{
-    font-size: 2rem;
-    margin-bottom: 2rem;
+    font-size: 2em;
+    margin-bottom: 2em;
 }
 
 .m-subtitle{
-    font-size: 1.5rem;
-    margin-top: 1.5rem
+    font-size: 1.5em;
+    margin-top: 1.5em
 }
 
 .m-subtitle-link{
@@ -352,7 +354,7 @@ header.sticky .navbar-expand-lg.navbar{
 }
 
 .m-servicii-item-text{
-    font-size: 1rem;
+    font-size: 1em;
     padding-bottom:10px;
     position: relative;
     z-index: 1
