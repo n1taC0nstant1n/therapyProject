@@ -479,3 +479,57 @@ footer{
 .contact-item-fb a img:hover{
     filter: grayscale(100%)
 }
+
+/* page-img-wrapper */
+.page-img-wrapper{
+    position: relative;
+    z-index: 1;
+}
+
+.page-img{
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    z-index: 1;
+}
+
+.page-img::before{
+    padding-bottom: 25%;
+    content: '';
+    display: block
+}
+
+.despre{
+    background-image: url('./imagini/despre.jpg');
+}
+
+.servicii{
+    background-image: url('./imagini/servicii.jpg');
+}
+
+.contact{
+    background-image: url('./imagini/contact.jpg');
+}
+
+
+
+.overlay-page-img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    background: rgba(0,0,0, .2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.overlay-page-img-titlu{
+    font-size: 2.5em;
+    color: #fff;
+    font-weight: 600;
+}
+
