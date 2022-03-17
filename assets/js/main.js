@@ -31,4 +31,8 @@ $(document).ready(function(){
         } else {
             $("header").removeClass('sticky');
         }
-});
+    });
+
+    $('nav li a').filter(function(){
+        return this.href === location.href;
+      }).addClass('active');
