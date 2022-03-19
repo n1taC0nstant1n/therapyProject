@@ -63,7 +63,7 @@
 
 .servicii-content-item-subtitlu{
     text-transform: uppercase;
-    font-size: 1.2em;
+    font-size: 1.4em;
     color: #098e8e;
     margin-bottom: .5em;
     font-weight: 600;
@@ -71,13 +71,37 @@
 }
 
 .servicii-content-item-subtitlu-text{
-    font-size: 1em;
+    font-size: 1.2em;
     color: #414243;
     margin-bottom: .2em;
 }
 
 .serv-pret{
-    font-size: 1.2em;
+    font-size: 1.6em;
     color: #414243;
     font-weight: 600;
+} 
+.servicii-lista,
+.contraindicatii{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.servicii-lista li,
+.contraindicatii li{
+    font-size: 1.2em;
+   
+}
+
+.servicii-lista li i,
+.contraindicatii li i{
+    display: inline-block;
+    width: 1.2em;
+    font-size: 1.2em;
+    color: #098e8e;
+}
+
+.contraindicatii li i{
+    color: #b94141;
 }

@@ -16,6 +16,16 @@ $(document).ready(function(){
         }
     }
     })
+    // add icon to servicii lista
+    $(".servicii-lista li").prepend('<i class="fa-solid fa-circle-check"></i>');
+    // $('.contraindicatii li').prepend('<i class="fa-solid fa-circle-xmark"></i>');
+
+    if($('section ul').hasClass('contraindicatii')){
+        $('.contraindicatii li i').remove();
+        $('.contraindicatii li').prepend('<i class="fa-solid fa-circle-xmark"></i>')
+    }
+
+
     });
 
     /* close menu resp */
@@ -36,3 +46,5 @@ $(document).ready(function(){
     $('nav li a').filter(function(){
         return this.href === location.href;
       }).addClass('active');
+
+  
